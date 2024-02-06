@@ -20,14 +20,25 @@
 // 7812 => 8
 // 91 => третьей цифры нет
 
-int number = 925;
-if (number >= 100)
+// int number = 66;
+// if (number >= 100)
+// {
+//     int thirdDigitFromEnd = number / 100 % 10;
+//     Console.WriteLine($"Третья цифра числа {number} с конца: {thirdDigitFromEnd}");
+// }
+//         else
+//     {
+//         Console.WriteLine("Третьей цифры нет");
+//     }
+
+int a = 5;
+int b = 2;
+if (a % b == 0)
 {
-    int thirdDigitFromEnd = number / 100 % 10;
-    Console.WriteLine($"Третья цифра числа {number} с конца: {thirdDigitFromEnd}");
+    Console.WriteLine($"число {a} кратно (делится без остатка) числу {b}");
 }
-        else
-    {
-        Console.WriteLine("Третьей цифры нет");
-    }
+else
+{
+    Console.WriteLine($"число {a} не кратно (делится с остатком = {a % b}) числу {b}");
+}
 
